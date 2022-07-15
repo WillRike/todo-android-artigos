@@ -5,7 +5,6 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "br.com.alura.todo"
@@ -16,7 +15,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        viewBinding true
+    }
     buildTypes {
         release {
             minifyEnabled false
